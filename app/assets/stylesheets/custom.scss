@@ -1,14 +1,86 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
-footer {
-  margin-top: auto;
+
+/* footer */
+
+.navbar-toggler{
+  display: none;
 }
+
+.navbar-brand{
+  position: relative;
+  top: 10px;
+  text-align: center;
+}
+
+@media (max-width: 1000px) {
+  .navbar-brand{
+    position: relative;
+    top: 10px;
+    left: 50px;
+  }
+
+  .nav_nav-tabs{
+    display: none;
+  }
+
+  .navbar-toggler{
+    display: none;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-brand{
+    position: relative;
+    top: 10px;
+  }
+
+.navbar-light .navbar-toggler {
+  border-color: opacity($color: #fff);
+}
+  .navbar-toggler{
+    display: block;
+    position: relative;
+    left: 50px;
+    border-color:#fff;
+    outline: none;
+  }
+
+  .nav .nav-tabs{
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar-brand{
+    position: relative;
+    top: 10px;
+    left: 30px;
+  }
+
+  .navbar-toggler{
+    display: block;
+    position: relative;
+    left: 10px;
+    outline: none;
+  }
+
+  .nav-tabs{
+    display: none;
+  }
+  .nav .nav-tabs{
+    display: none;
+  }
+}
+
 
 /* universal */
 
 body {
-  padding-top: 60px;
+  margin-top: 10px;
 }
 
 section {
@@ -62,14 +134,12 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-size: 3em;
-  letter-spacing: -2px;
   margin-bottom: 30px;
   text-align: center;
 }
 
 h2 {
   font-size: 1.2em;
-  letter-spacing: -1px;
   margin-bottom: 30px;
   text-align: center;
   font-weight: normal;
@@ -77,6 +147,12 @@ h2 {
 }
 
 p {
-  font-size: 1.1em;
+  font-size: 1.2em;
   line-height: 1.7em;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+main{
+  margin-top: 150px;
 }
